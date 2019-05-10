@@ -1,5 +1,5 @@
 #!/bin/bash
-export BUCKET=${BUCKET:=cloud-training-demos-ml}
+export BUCKET=${BUCKET:=data-science-on-the-gcp-239619}
 echo "Uploading to bucket $BUCKET..."
-gsutil -m cp *.csv gs://$BUCKET/flights/raw
+gsutil -m cp *.csv gs://$BUCKET
 #gsutil -m acl ch -R -g google.com:R gs://$BUCKET/flights/raw
